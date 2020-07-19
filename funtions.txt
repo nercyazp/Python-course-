@@ -1,5 +1,19 @@
+"""for declared a funtion"""
 def greeting (name):
-    print("welcome " + name)
+   print("welcome " + name)
     
 greeting ("nercy")
 greeting ("Juanita")
+
+"""for print a instruction"""
+print ("Hello World!")
+
+"""formprint operation"""
+print ((2**3)+5)
+
+"""for print instruction mixed int and string"""
+base= 5
+height =2
+area = base * height/2
+print ("the area for triangle is: " + str(area))
+print ("the triangle area is: ", area)
