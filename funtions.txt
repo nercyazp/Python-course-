@@ -1,0 +1,5 @@
+def greeting (name):
+    print("welcome " + name)
+    
+greeting ("nercy")
+greeting ("Juanita")
