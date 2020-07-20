@@ -5,15 +5,35 @@ def greeting (name):
 greeting ("nercy")
 greeting ("Juanita")
 
-"""for print a instruction"""
-print ("Hello World!")
+"""funtions of two variables"""
+def greeting (name, department):
+    print ("Welcome " + name)
+    print ("You are part of " + department)
+    print ("--------------------")
+    
+greeting ("Maria", "Bogota")
+greeting ("Pedro", "Medellin")
 
-"""formprint operation"""
-print ((2**3)+5)
+"""funtios that return a value"""
+def get_seconds(hours, minutes, seconds):
+  return 3600*hours + 60*minutes + seconds
 
-"""for print instruction mixed int and string"""
-base= 5
-height =2
-area = base * height/2
-print ("the area for triangle is: " + str(area))
-print ("the triangle area is: ", area)
+amount_a = get_seconds(2, 30, 0)
+amount_b = get_seconds(0, 45, 15)
+result = amount_a + amount_b
+print(result)
+
+"""Funtion calculates how many hours, minutes and seconds there are in determinated seconds"""
+def convert_seconds (seconds):
+    hours= seconds//3600
+    minutes=(seconds-hours*3600)//60
+    remaining_seconds = seconds-hours*3600-minutes*60
+    print (hours, ":", minutes, ":", remaining_seconds)
+    return [hours, minutes, remaining_seconds]
+
+convert_seconds (3600)
+convert_seconds (3610)
+convert_seconds (3710)
+hours, minutes, seconds = convert_seconds(5000)
+print ("--------------------------------")
+print (hours, minutes, seconds)
